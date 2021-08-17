@@ -1,25 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import * as React from 'react';
 import './App.css';
+import Container from './components/Container';
+import Card from './components/Card';
+import Input from './components/Input';
+import Header from './components/Header';
+import Intro from './components/Intro';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Intro text='texto1' />
+      <Intro />
     </div>
+    // <Container>
+    //   <Card>
+    //     <Input placeholder='Correo' label='Correo' />
+    //     <Input placeholder='Contraseña' label='Contraseña' />
+
+    //   </Card>
+    // </Container>
   );
 }
 
